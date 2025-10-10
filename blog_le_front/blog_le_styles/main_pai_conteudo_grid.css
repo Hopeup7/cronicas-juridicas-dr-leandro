@@ -71,7 +71,11 @@
 .conteudo-grid > * {
   width: auto;
   height: auto;
+  min-width: 0; /* Evita que filhos forcem largura */
+  overflow-wrap: break-word; /* Quebra palavras longas */
 }
+
+
 .conteudo-grid > .perfil-container {
   grid-column: 1;
 }
@@ -82,4 +86,27 @@
 
 .conteudo-grid > .lei-container {
   grid-column: 3;
+}
+/* Correção para responsividade em telas pequenas */
+@media screen and (max-width: 600px) {
+  .conteudo-grid {
+    grid-template-columns: 1fr !important;
+    padding: 1rem;
+  }
+
+  .conteudo-grid > * {
+    min-width: 0;
+    overflow-wrap: break-word;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  p, h2, h3, h4, h5, h6 {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
 }
