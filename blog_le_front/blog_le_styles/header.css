@@ -7,7 +7,7 @@
 /* ===================== BANNER PADRÃO ===================== */
 #banner {
   height: 550px; /* Altura padrão para desktops */
-  background-image: url("/blog_le_front/imagens_front_blog_le/so_logo_blog_le.png");
+  background-image: url("../imagens_front_blog_le/so_logo_blog_le.png");
   background-position: center; /* Centraliza a imagem */
   background-size: 100% 100%;  /* Preenche todo o espaço */
   background-repeat: no-repeat; /* Evita repetição da imagem */
