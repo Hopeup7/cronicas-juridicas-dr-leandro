@@ -68,3 +68,18 @@
     column-gap: 2.5rem; /* Mais espaço entre colunas */
   }
 }
+.conteudo-grid > * {
+  width: auto;
+  height: auto;
+}
+.conteudo-grid > .perfil-container {
+  grid-column: 1;
+}
+
+.conteudo-grid > .conteudo-principal {
+  grid-column: 2;
+}
+
+.conteudo-grid > .lei-container {
+  grid-column: 3;
+}
