@@ -1,0 +1,140 @@
+/* ← Tipografia, cores e elementos genéricos*/
+/*Estilos básicos globais (fonte, cor, espaçamento)*/
+
+/*Deus, Tu és Senhor e Rei e integrante da Equipe HopeUp 7.DEV, por isso se faça presente aqui nestes nossos estudos, por favor, Senhor.*/
+
+main > section {
+  margin-bottom: 3rem; /* Espaço entre seções do main */
+}
+html, body {
+  overflow-x: hidden; /* Evita scroll horizontal */
+  max-width: 100%;
+  font-size: 16px; /* base mais leve */
+  line-height: 1.6;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* ===================== TIPOGRAFIA GLOBAL COM CLAMP ===================== */
+
+/* Hierarquia de títulos com responsividade */
+h1 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem); /* Título principal */
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem); /* Subtítulo */
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem); /* Título de seção */
+}
+
+h4 {
+  font-size: clamp(1.1rem, 2vw, 1.5rem); /* Título menor */
+}
+
+h5 {
+  font-size: clamp(1rem, 1.5vw, 1.2rem); /* Título auxiliar */
+}
+
+h6 {
+  font-size: clamp(0.9rem, 1.2vw, 1rem); /* Título mínimo */
+}
+
+/* Parágrafos padrão com responsividade */
+p {
+  font-size: clamp(1rem, 1.2vw, 1.125rem); /* Texto fluido */
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: inherit;
+}
+
+/* Listas com responsividade */
+ul, li {
+  font-size: clamp(0.95rem, 1.1vw, 1rem); /* Tamanho ajustável */
+  margin: 0 0 0 1rem;
+  line-height: 1.6;
+}
+
+/* Smartphones pequenos (até 400px) */
+@media screen and (max-width: 400px) {
+  main > section {
+    margin-bottom: 2rem; /* Reduz espaço entre seções */
+  }
+
+  html, body {
+    font-size: 15px; /* Base levemente menor */
+  }
+}
+
+/* Smartphones médios (até 480px) */
+@media screen and (max-width: 480px) {
+  html, body {
+    font-size: 15.5px;
+  }
+}
+
+/* Tablets pequenos (até 768px) */
+@media screen and (max-width: 768px) {
+  html, body {
+    font-size: 16px; /* Base padrão */
+  }
+}
+
+/* Ultrawides (acima de 1920px) */
+@media screen and (min-width: 1921px) {
+  html, body {
+    font-size: 17px; /* Base maior para telas largas */
+  }
+
+  main > section {
+    margin-bottom: 4rem; /* Mais espaço entre blocos */
+  }
+}
+
+/* ===================== TIPOGRAFIA GLOBAL FORÇADA ===================== */
+h1 {
+  font-size: 2.4rem !important;
+  line-height: 1.3 !important;
+}
+
+h2 {
+  font-size: 2rem !important;
+  line-height: 1.4 !important;
+}
+
+h3 {
+  font-size: 1.7rem !important;
+  line-height: 1.4 !important;
+}
+
+h4 {
+  font-size: 1.4rem !important;
+  line-height: 1.4 !important;
+}
+
+h5 {
+  font-size: 1.2rem !important;
+  line-height: 1.4 !important;
+}
+
+h6 {
+  font-size: 1rem !important;
+  line-height: 1.4 !important;
+}
+
+p {
+  font-size: 1.250rem !important;
+  line-height: 1.4 !important;
+}
+
+ul, li {
+  font-size: 1.150rem !important;
+  line-height: 1.6 !important;
+}

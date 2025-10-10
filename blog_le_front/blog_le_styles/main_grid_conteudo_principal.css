@@ -1,0 +1,180 @@
+/* ← Parte 2 do `<main>` (perfil, conteúdo, lei)*/
+/*Parte central do conteúdo com layout em Grid*/
+
+/*Deus, Tu és Senhor e Rei e integrante da Equipe HopeUp 7.DEV, por isso se faça presente aqui nestes nossos estudos, por favor, Senhor.*/
+/* ← Parte 2 do <main> (perfil, conteúdo, lei) */
+/* Conteúdo central da narrativa jurídica */
+
+/*Deus, Tu és Senhor e Rei e integrante da Equipe HopeUp 7.DEV, por isso se faça presente aqui nestes nossos estudos, por favor, Senhor.*/
+
+/* ============== CONTAINER PRINCIPAL ===================== */
+.conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  min-height: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.08);
+  box-sizing: border-box;
+  font-size: clamp(1rem, 1.5vw, 1.3rem); /* Texto base fluido */
+  line-height: 1.5;
+  color: #333;
+}
+
+/* ============== ELEMENTOS INTERNOS ===================== */
+
+/* Crescimento vertical dos filhos */
+.conteudo-principal > * {
+  flex-grow: 1;
+}
+
+/* Títulos */
+.conteudo-principal h2,
+.conteudo-principal h3,
+.conteudo-principal h4 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #2c2c2c;
+}
+
+
+/* ============== TÍTULOS COM CLAMP ===================== */
+.conteudo-principal h2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem); /* Título principal */
+  margin: 0.25rem 0 0.5rem 0;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.1rem !important;
+}
+
+.conteudo-principal h3 {
+  font-size: clamp(1.2rem, 2vw, 1.6rem); /* Subtítulo */
+  margin: 0.25rem 0 0.5rem 0;
+  letter-spacing: 0.2px;
+  margin-bottom: 0.1rem !important;
+}
+
+.conteudo-principal h4 {
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem); /* Título menor */
+  margin: 1.5rem auto;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.1rem !important;
+}
+
+
+/* ============== PARÁGRAFOS COM CLAMP ===================== */
+.conteudo-principal p {
+  font-size: clamp(1.5rem, 1.4vw, 1.4rem)!important;; /* Texto fluido */
+  line-height: 1.6;
+  margin-bottom: 0.1rem !important;
+}
+
+/* ======== LISTAS DENTRO DA COLUNA PRICIPAL============ */
+.conteudo-principal ul {
+  list-style-type: disc;          /* bolinhas padrão */
+  list-style-position: outside;   /* marcador fora do texto */
+  margin: 1rem 0 1rem 1.5rem;     /* espaço em volta */
+  padding-left: 1rem;             /* recuo para os marcadores */
+  line-height: 1.6;               /* mesma altura de linha dos parágrafos */
+}
+
+/* ============== LISTAS COM CLAMP ===================== */
+.conteudo-principal li {
+  font-size: clamp(1.150rem, 1.2vw, 1.05rem); /* Itens da lista */
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+
+/* Ênfase */
+.conteudo-principal em {
+  font-style: italic;
+  color: #444;
+}
+
+.conteudo-principal strong {
+  font-weight: bold;
+  color: #222;
+}
+
+/* Links */
+.conteudo-principal a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.conteudo-principal a:hover {
+  text-decoration: none;
+}
+
+/* Smartphones pequenos (até 400px) */
+@media screen and (max-width: 400px) {
+  .conteudo-principal {
+    padding: 1rem; /* Reduz espaço interno */
+  }
+
+  .conteudo-principal h2,
+  .conteudo-principal h3,
+  .conteudo-principal h4 {
+    text-align: left; /* Melhor leitura em telas estreitas */
+  }
+
+  .conteudo-principal ul {
+    margin-left: 1rem;
+  }
+}
+
+/* Smartphones médios (até 480px) */
+@media screen and (max-width: 480px) {
+  .conteudo-principal {
+    padding: 1.2rem;
+  }
+}
+
+/* Smartphones grandes / phablets (até 600px) */
+@media screen and (max-width: 600px) {
+  .conteudo-principal {
+    padding: 1.5rem;
+  }
+}
+
+/* Tablets pequenos (até 768px) */
+@media screen and (max-width: 768px) {
+  .conteudo-principal {
+    padding: 2rem;
+  }
+}
+
+/* Tablets grandes / notebooks compactos (até 992px) */
+@media screen and (max-width: 992px) {
+  .conteudo-principal {
+    padding: 2.2rem;
+  }
+}
+
+/* Ultrawides (acima de 1920px) */
+@media screen and (min-width: 1921px) {
+  .conteudo-principal {
+    padding: 2.5rem; /* Mais espaço para telas largas */
+  }
+
+  .conteudo-principal h2 {
+    font-size: 2rem;
+  }
+
+  .conteudo-principal h3 {
+    font-size: 1.8rem;
+  }
+
+  .conteudo-principal h4 {
+    font-size: 1.6rem;
+  }
+}
+
+
+

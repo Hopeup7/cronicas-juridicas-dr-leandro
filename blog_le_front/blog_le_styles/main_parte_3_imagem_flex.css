@@ -1,0 +1,127 @@
+/*← Parte 3 do `<main>` (imagem final)*/
+/*Parte inferior do conteúdo com Flexbox*/
+
+/*Deus, Tu és Senhor e Rei e integrante da Equipe HopeUp 7.DEV, por isso se faça presente aqui nestes nossos estudos, por favor, Senhor.*/
+
+/* ===================== PARTE 3: IMAGEM EM FLEXBOX ===================== */
+.imagem-flex {
+  display: flex; /* Ativa Flexbox para organizar os elementos filhos */
+  flex-direction: column; /* Empilha verticalmente: imagem + legenda */
+  justify-content: center; /* Centraliza verticalmente dentro do container */
+  align-items: center; /* Centraliza horizontalmente os elementos */
+  padding: 0; /* Remove espaçamento interno para permitir que a imagem ocupe toda a área */
+  background-color: #eaeaea; /* Fundo neutro para destacar a imagem */
+  width: 100%; /* Ocupa toda a largura disponível */
+  box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+}
+.representacao-Dr\.Leandro {
+  width: 100%; /* Garante que o container da imagem ocupe toda a largura */
+  text-align: center; /* Centraliza o texto da legenda */
+}/*Observação: o caractere \. é necessário para escapar o ponto na classe .representacao-Dr.Leandro, já que CSS interpreta ponto como seletor de classe.*/
+
+.representacao-Dr\.Leandro img {
+  width: 100%; /* Faz a imagem ocupar toda a largura do container */
+  height: 100%; /* Preenche toda a altura disponível — cuidado com distorções se o container não tiver altura definida */
+  object-fit: cover; /* Corta a imagem inteligentemente para preencher o espaço sem distorcer */
+  border-radius: 0; /* Remove cantos arredondados para visual institucional e de impacto */
+  box-shadow: none; /* Remove sombra para manter estética limpa e direta */
+  display: block; /* Garante que a imagem se comporte como bloco e não inline */
+}
+
+.representacao-Dr\.Leandro figcaption {
+  font-size: clamp(1rem, 1vw, 1rem); /* escala fluida */
+  color: #555; /* Tom suave para leitura prolongada */
+  font-style: italic; /* Estilo editorial para reforçar o tom narrativo */
+  line-height: 1.6; /* Espaçamento entre linhas para fluidez visual */
+  padding: 1rem; /* Espaço interno para respiro da legenda */
+  max-width: 100%; /* Garante que a legenda não ultrapasse os limites do container */
+  background-color: #f9f9f9; /* Fundo claro para destacar a legenda sem competir com a imagem */
+}
+
+.imagem-flex {
+  display: flex; /* Ativa Flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  padding: 2.5rem; /* Espaço interno */
+  background-color: #eaeaea; /* Fundo neutro */
+  width: 100%; /* Ocupa toda a largura */
+  box-sizing: border-box; /* Inclui padding na largura */
+}
+
+.imagem-flex img {
+  width: 100%; /* Responsivo */
+  height: auto; /* Mantém proporção */
+  max-height: 800px; /* Limita altura máxima */
+  object-fit: fill; /* Preenche sem distorcer */
+  border-radius: 10px; /* Cantos arredondados */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+.representacao-Dr\.Leandro em {
+  font-size: clamp(1rem, 1vw, 1rem); /* escala fluida */
+}
+/* Smartphones pequenos (até 400px) */
+@media screen and (max-width: 400px) {
+  .imagem-flex {
+    padding: 1.5rem; /* Reduz espaço interno */
+  }
+
+  .representacao-Dr\.Leandro img {
+    max-height: 300px; /* Imagem mais compacta */
+    border-radius: 6px; /* Cantos mais suaves */
+  }
+
+  .representacao-Dr\.Leandro figcaption {
+    padding: 0.8rem; /* Menos espaço interno */
+    font-size: 0.95rem;
+  }
+}
+
+/* Smartphones médios (até 480px) */
+@media screen and (max-width: 480px) {
+  .representacao-Dr\.Leandro img {
+    max-height: 400px;
+  }
+}
+
+/* Smartphones grandes / phablets (até 600px) */
+@media screen and (max-width: 600px) {
+  .representacao-Dr\.Leandro img {
+    max-height: 500px;
+  }
+}
+
+/* Tablets pequenos (até 768px) */
+@media screen and (max-width: 768px) {
+  .imagem-flex {
+    padding: 2rem;
+  }
+
+  .representacao-Dr\.Leandro img {
+    max-height: 600px;
+  }
+}
+
+/* Tablets grandes / notebooks compactos (até 992px) */
+@media screen and (max-width: 992px) {
+  .representacao-Dr\.Leandro img {
+    max-height: 700px;
+  }
+}
+
+/* Ultrawides (acima de 1920px) */
+@media screen and (min-width: 1921px) {
+  .imagem-flex {
+    padding: 3rem; /* Mais espaço para telas largas */
+  }
+
+  .representacao-Dr\.Leandro img {
+    max-height: 900px; /* Imagem mais impactante */
+    border-radius: 12px;
+  }
+
+  .representacao-Dr\.Leandro figcaption {
+    font-size: 1.1rem; /* Legenda maior para monitores largos */
+    padding: 1.2rem;
+  }
+}

@@ -1,0 +1,162 @@
+/* ===================== TEXTO DESTAQUE COM CLAMP ===================== */
+.destaque {
+  background-color: #e0f0ff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #b22222;
+  font-size: clamp(1.2rem, 2vw, 1.5rem); /* Tamanho fluido */
+}
+
+.destaque ul li {
+  font-size: clamp(1.2rem, 2.5vw, 2rem); /* Lista dentro do destaque */
+}
+
+/* ===================== LISTAS COM CLAMP ===================== */
+ul li {
+  font-size: clamp(1rem, 2vw, 2rem); /* Tamanho ajustável para listas */
+}
+
+/* ===================== BOTÕES DE REDES SOCIAIS COM CLAMP ===================== */
+.botao-instagram,
+.botao-whatsapp {
+  display: inline-block;
+  margin: 0.4rem 0;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  font-size: clamp(0.95rem, 1.2vw, 1.1rem); /* Tamanho fluido do texto do botão */
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  color: #fff;
+}
+
+.botao-instagram {
+  background-color: #E1306C;
+}
+.botao-instagram:hover {
+  background-color: #c1275b;
+}
+
+.botao-whatsapp {
+  background-color: #25D366;
+}
+.botao-whatsapp:hover {
+  background-color: #1da851;
+}
+
+.botao-instagram i,
+.botao-whatsapp i {
+  margin-right: 6px;
+}
+
+/* ===================== BLOCO DE CONTATO COM CLAMP ===================== */
+.bloco-contato {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.bloco-contato p {
+  margin: 0.5rem 0;
+  font-size: clamp(0.95rem, 1.2vw, 1.1rem); /* Texto fluido */
+  line-height: 1.6;
+}
+
+/* ===================== LOGO SUAVE ===================== */
+.logo-suave-anuncie {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin: 0 auto 1rem auto;
+  display: block;
+  object-fit: cover;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+.logo-suave-anuncie:hover {
+  opacity: 1;
+}
+
+/* Smartphones pequenos (até 400px) */
+@media screen and (max-width: 400px) {
+  .logo-suave-anuncie {
+    max-width: 200px; /* Imagem menor para telas estreitas */
+  }
+
+  .bloco-contato {
+    padding: 0.75rem; /* Reduz espaço interno */
+  }
+
+  .botao-instagram,
+  .botao-whatsapp {
+    padding: 0.4rem 0.8rem; /* Botões mais compactos */
+  }
+}
+
+/* Smartphones médios (até 480px) */
+@media screen and (max-width: 480px) {
+  .logo-suave-anuncie {
+    max-width: 220px;
+  }
+}
+
+/* Smartphones grandes / phablets (até 600px) */
+@media screen and (max-width: 600px) {
+  .logo-suave-anuncie {
+    max-width: 240px;
+  }
+}
+
+/* Tablets pequenos (até 768px) */
+@media screen and (max-width: 768px) {
+  .logo-suave-anuncie {
+    max-width: 260px;
+  }
+
+  .bloco-contato {
+    padding: 1rem;
+  }
+}
+
+/* Tablets grandes / notebooks compactos (até 992px) */
+@media screen and (max-width: 992px) {
+  .logo-suave-anuncie {
+    max-width: 280px;
+  }
+}
+
+/* Notebooks médios (até 1200px) */
+@media screen and (max-width: 1200px) {
+  .logo-suave-anuncie {
+    max-width: 300px;
+  }
+}
+
+/* Desktops grandes (até 1440px) */
+@media screen and (max-width: 1440px) {
+  .logo-suave-anuncie {
+    max-width: 320px;
+  }
+}
+
+/* Ultrawides (acima de 1920px) */
+@media screen and (min-width: 1921px) {
+  .logo-suave-anuncie {
+    max-width: 360px; /* Imagem maior para telas ultra largas */
+  }
+
+  .bloco-contato {
+    padding: 1.25rem;
+  }
+
+  .botao-instagram,
+  .botao-whatsapp {
+    padding: 0.6rem 1.2rem; /* Botões mais espaçosos */
+  }
+}

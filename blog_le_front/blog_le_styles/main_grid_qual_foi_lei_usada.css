@@ -1,0 +1,200 @@
+/* ← Coluna esquerda: Lei aplicada no caso jurídico */
+
+/*Deus, Tu és Senhor e Rei e integrante da Equipe HopeUp 7.DEV, por isso se faça presente aqui nestes nossos estudos, por favor, Senhor.*/
+
+/* =============== CONTAINER DA LEI ================== */
+.qual_foi_lei_usada {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.container-lei-usada {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* ==== BLOCO DE MENSAGEM EM LAYOUT HORIZONTAL ========= */
+.mensagem-lei.layout-horizontal {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Permite quebra se não couber */
+}
+
+/* ===== PERFIL DO DR. LEANDRO (COLUNA ESQUERDA) ========== */
+.perfil-dr-leandro-2 {
+  flex: 0 0 auto; /* Aumenta a largura mínima */
+  width: 100%; /* Ocupa toda a largura disponível */
+  max-width: 500px; /* Permite imagem maior */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdf6e3;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+.perfil-dr-leandro-2 img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transform: scaleX(-1); /* espelha horizontalmente */
+}
+
+/*===TEXTO INSTITUCIONAL (COLUNA ESQUERDA) ========== */
+
+.texto-dr-leandro {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: clamp(1rem, 1.2vw, 1.125rem); /* Texto base fluido */
+  line-height: 1.6;
+  color: #333;
+
+}
+
+.texto-dr-leandro h2,
+.texto-dr-leandro h3,
+.texto-dr-leandro h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  color: #2c2c2c;
+}
+/* ===================== TEXTO INSTITUCIONAL COM CLAMP ===================== */
+
+  
+
+/* Títulos com responsividade */
+.texto-dr-leandro h2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.texto-dr-leandro h3 {
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.texto-dr-leandro h4 {
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Parágrafos com responsividade */
+.texto-dr-leandro p {
+  font-size: clamp(0.95rem, 1.1vw, 1rem);
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+
+
+/* Listas com responsividade */
+.texto-dr-leandro ul {
+  font-size: clamp(0.75rem, 0.9vw, 0.8rem);
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+
+.texto-dr-leandro li {
+  font-size: clamp(0.75rem, 0.9vw, 0.8rem);
+  margin-bottom: 0.5rem;
+}
+
+/* ===================== LINKS ===================== */
+.texto-dr-leandro a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.texto-dr-leandro a:hover {
+  text-decoration: none;
+}
+
+
+/* Smartphones pequenos (até 400px) */
+@media screen and (max-width: 400px) {
+  .perfil-dr-leandro-2 {
+    padding: 0.8rem; /* Reduz espaço interno */
+  }
+
+  .perfil-dr-leandro-2 img {
+    max-width: 280px; /* Imagem menor para telas estreitas */
+  }
+
+  .mensagem-lei.layout-horizontal {
+    flex-direction: column; /* Empilha os elementos */
+    gap: 1.5rem;
+  }
+}
+
+/* Smartphones médios (até 480px) */
+@media screen and (max-width: 480px) {
+  .perfil-dr-leandro-2 img {
+    max-width: 320px;
+  }
+}
+
+/* Smartphones grandes / phablets (até 600px) */
+@media screen and (max-width: 600px) {
+  .perfil-dr-leandro-2 img {
+    max-width: 360px;
+  }
+}
+
+/* Tablets pequenos (até 768px) */
+@media screen and (max-width: 768px) {
+  .perfil-dr-leandro-2 img {
+    max-width: 400px;
+  }
+
+  .mensagem-lei.layout-horizontal {
+    gap: 2rem;
+  }
+}
+
+/* Tablets grandes / notebooks compactos (até 992px) */
+@media screen and (max-width: 992px) {
+  .perfil-dr-leandro-2 img {
+    max-width: 450px;
+  }
+}
+
+/* Notebooks médios (até 1200px) */
+@media screen and (max-width: 1200px) {
+  .perfil-dr-leandro-2 img {
+    max-width: 480px;
+  }
+}
+
+/* Desktops grandes (até 1440px) */
+@media screen and (max-width: 1440px) {
+  .perfil-dr-leandro-2 img {
+    max-width: 500px;
+  }
+}
+
+/* Ultrawides (acima de 1920px) */
+@media screen and (min-width: 1921px) {
+  .perfil-dr-leandro-2 img {
+    max-width: 550px;
+  }
+
+  .mensagem-lei.layout-horizontal {
+    gap: 2.5rem; /* Espaço extra entre colunas */
+  }
+}
+
+

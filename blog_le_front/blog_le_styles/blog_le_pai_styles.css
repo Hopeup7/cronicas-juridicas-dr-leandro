@@ -1,0 +1,50 @@
+/*← CSS pai que importa todos os módulos*/
+/*Arquivo principal que importa todos os módulos acima*/
+
+/*Deus, Tu és Senhor e Rei e integrante da Equipe HopeUp 7.DEV, por isso se faça presente aqui nestes nossos estudos, por favor, Senhor.*/
+
+/* ===================== RESET E BASE ===================== */
+@import url('reset.css');
+@import url('base.css');
+@import url('header.css');
+/* ===================== COMPONENTES REUTILIZÁVEIS ===================== */
+@import url('componentes.css');
+
+/* ===================== SEÇÃO 1 EM FLEXBOX ===================== */
+
+@import url('main_parte_1_titulo_flex.css');
+
+
+/* ===================== ESTRUTURA PRINCIPAL DO GRID ===================== */
+@import url('main_pai_conteudo_grid.css');
+
+/* ===================== BLOCOS DA COLUNA ESQUERDA ===================== */
+@import url('main_grid_qual_foi_lei_usada.css');
+
+@import url('main_grid_citacao_precedente.css');
+
+@import url('aside_perfil_anuncie_aqui_esquerda.css');
+
+@import url('aside_perfil_anuncie_aqui_esquerda_2.css');
+
+@import url('aside_perfil_valores.css');
+
+/* ===================== COLUNA CENTRAL: CRÔNICA ===================== */
+@import url('main_grid_conteudo_principal.css');
+
+/* ===================== COLUNA DIREITA: LEI E CITAÇÃO ===================== */
+@import url('article_quem_sou.css');
+@import url('aside_perfil_ajuda.css');
+@import url('aside_anuncios_perfil_container.css');
+
+@import url('aside_perfil_anuncie_aqui.css');
+
+/* ===================== SEÇÃO FINAL DE IMAGEM ===================== */
+@import url('main_parte_3_imagem_flex.css');
+
+/* ===================== RODAPÉ ===================== */
+@import url('footer.css');
+
+/* ===================== RESPONSIVIDADE ===================== */
+@import url('media-queries.css');
+

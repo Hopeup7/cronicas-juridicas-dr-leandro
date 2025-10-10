@@ -1,0 +1,69 @@
+/*← Rodapé e créditos finais*/
+/*Rodapé do site com créditos e logo*/
+
+/*Deus, Tu és Senhor e Rei e integrante da Equipe HopeUp 7.DEV, por isso se faça presente aqui nestes nossos estudos, por favor, Senhor.*/
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #3e3d3d;
+  font-size: clamp(0.85rem, 1vw, 1rem); /* Texto menor e responsivo */
+  color: #eceef3;
+}
+.powered-by {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+  color: #eceef3;
+  font-size: clamp(1rem, 1.2vw, 1.1rem); /* Texto da equipe responsivo */
+}
+/* Logo suave */
+.logo-suave {
+  height: 42px;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  vertical-align: middle;
+}
+
+/* Efeito hover no logo */
+.logo-suave:hover {
+  opacity: 1;
+}
+
+.footer p {
+  margin-bottom: 1rem;
+  font-size: clamp(1rem, 1.2vw, 1.1rem); /* Texto institucional fluido */
+}
+
+
+/* Logo no “© Equipe Powered By” */
+.powered-by .logo-suave {
+  height: 32px;
+  width: auto;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+
+.powered-by .logo-suave:hover {
+  opacity: 1;
+}
+
+.powered-by {
+  flex-wrap: wrap;        /* Permite que os elementos internos quebrem linha — útil em rodapés com múltiplos logos ou links */
+  color: #eceef3;         /* Tom claro — combina com fundo escuro típico de rodapés */
+}
+
+/* ===================== TEXTO DO RODAPÉ COM CLAMP ===================== */
+
+
+/* ===================== BLOCO “Powered By” COM CLAMP ===================== */
+
+
+
+
+
+

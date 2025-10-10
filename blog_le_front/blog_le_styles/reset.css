@@ -1,0 +1,21 @@
+/*← Reset universal de estilos*/
+/*Resetar estilos padrão dos navegadores*/
+
+/*Deus, Tu és Senhor e Rei e integrante da Equipe HopeUp 7.DEV, por isso se faça presente aqui nestes nossos estudos, por favor, Senhor.*/
+
+/* ===================== RESET BÁSICO ===================== */
+* {
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimento padrão */
+  box-sizing: border-box; /* Inclui padding e borda no cálculo de largura/altura */
+}
+
+/* ===================== RESET BÁSICO COM CLAMP ===================== */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: clamp(1rem, 1.2vw, 1.125rem); /* Responsivo: entre 16px e 18px */
+}

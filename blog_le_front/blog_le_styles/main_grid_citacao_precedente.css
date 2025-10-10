@@ -1,0 +1,207 @@
+/* ← Citação de Ruy Barbosa e reflexão final */
+/*Deus, Tu és Senhor e Rei e integrante da Equipe HopeUp 7.DEV, por isso se faça presente aqui nestes nossos estudos, por favor, Senhor.*/
+
+/* ===================== CONTAINER PRINCIPAL ===================== */
+.citacao-precedente {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-left: 4px solid #8b0000;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  font-family: 'Georgia', serif;
+  font-size: clamp(0.95rem, 1.1vw, 1rem); /* Texto base fluido */
+  line-height: 1.6;
+  color: #333;
+}
+
+/* ===================== TÍTULO COM CLAMP ===================== */
+.citacao-precedente h4 {
+  font-size: clamp(1.2rem, 2vw, 1.4rem); /* Título responsivo */
+  margin-bottom: 1rem;
+  color: #8b0000;
+  font-weight: bold;
+}
+
+/* ===================== BLOCO DE CITAÇÃO ===================== */
+.citacao-precedente blockquote {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid #ccc;
+  font-style: italic;
+  color: #444;
+}
+
+.citacao-precedente blockquote p {
+  font-size: clamp(1rem, 1.5vw, 1.2rem); /* Texto da citação */
+  line-height: 1.6;
+}
+
+.citacao-precedente blockquote footer {
+  margin-top: 0.5rem;
+  font-size: clamp(0.75rem, 0.9vw, 0.8rem); /* Fonte da citação */
+  font-weight: bold;
+  color: #666;
+}
+
+/* ===================== TEXTO EXPLICATIVO COM CLAMP ===================== */
+.citacao-precedente p {
+  font-size: clamp(0.95rem, 1.1vw, 1rem); /* Texto explicativo */
+  line-height: 1.6;
+  color: #444;
+  margin-top: 1.2rem;
+}
+
+
+
+/* =============== LISTAS DENTRO DO TEXTO DR. LEANDRO ============ */
+.texto-dr-leandro ul {
+  list-style-type: disc;          /* bolinhas padrão */
+  list-style-position: outside;   /* marcador fora do texto */
+  margin: 1rem 0 1rem 1.5rem;     /* espaço em volta */
+  padding-left: 1rem;             /* recuo para os marcadores */
+  line-height: 1.6;               /* mesma altura de linha dos parágrafos */
+}
+
+
+/* ===================== LISTAS COM CLAMP ===================== */
+.texto-dr-leandro li {
+  font-size: clamp(0.95rem, 1.1vw, 1rem); /* Itens da lista */
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+
+
+
+/* ===================== LINKS ===================== */
+.citacao-precedente a {
+  color: #8b0000;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+.le_ruy_barbosa em {
+  font-size: clamp(0.75rem, 0.9vw, 0.8rem); /* Texto pequeno em itálico */
+}
+
+
+/* ===================== REPRESENTAÇÃO FINAL: DR. LEANDRO E RUY BARBOSA ===================== */
+.representacao-hopeup {
+  margin-top: 2rem;
+  text-align: center;
+  height: auto;                 /* deixa a altura fluir */
+  min-height: 40vh;             /* nunca menor que 40% da altura da tela */
+  max-height: 80vh;             /* nunca maior que 80% da altura da tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;      /* centraliza verticalmente */
+}
+
+.representacao-hopeup img {
+  width: 100%;
+  height: auto;                 /* mantém proporção */
+  max-height: 70vh;             /* ocupa até 70% da altura da tela */
+  object-fit: cover;            /* cobre o espaço sem distorcer */
+  border-radius: 0.5rem;        /* cantos arredondados em rem */
+  box-shadow: 0 0 0.5rem rgba(0,0,0,0.1);
+  margin-bottom: 0.5rem;
+}
+/* ===================== LEGENDA DA IMAGEM COM CLAMP ===================== */
+.representacao-hopeup figcaption {
+  font-size: clamp(0.95rem, 1vw, 1rem); /* Legenda fluida */
+  color: #555;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+/* ===================== LINK SUTIL ===================== */
+
+.link-sutil {
+  text-align: center;     /* Centraliza o link — ideal para fechamento visual ou CTA discreto */
+  margin-top: 1rem;       /* Espaço acima para separar do conteúdo anterior */
+}
+
+
+.link-sutil a {
+  color: #0066cc;         /* Azul institucional — reforça interatividade */
+  font-weight: bold;      /* Negrito para dar leve destaque sem exagero */
+  text-decoration: none;  /* Remove sublinhado padrão — visual mais limpo */
+  font-size: clamp(0.95rem, 1vw, 1rem); /* Link discreto responsivo */
+}
+
+.link-sutil a:hover {
+  text-decoration: underline; /* Reativa sublinhado no hover — reforça que é clicável */
+}/*💡 Ideal para links como “Voltar ao topo”, “Ver mais detalhes” ou “Acesse o documento completo”.*/
+
+
+/* Smartphones pequenos (até 400px) */
+@media screen and (max-width: 400px) {
+  .citacao-precedente {
+    padding: 1.2rem; /* Reduz espaço interno */
+  }
+
+  .representacao-hopeup img {
+    max-height: 50vh; /* Imagem menor para telas estreitas */
+  }
+
+  .powered-by {
+    gap: 8px;
+  }
+}
+
+/* Smartphones médios (até 480px) */
+@media screen and (max-width: 480px) {
+  .representacao-hopeup img {
+    max-height: 55vh;
+  }
+}
+
+/* Smartphones grandes / phablets (até 600px) */
+@media screen and (max-width: 600px) {
+  .citacao-precedente {
+    padding: 1.5rem;
+  }
+
+  .representacao-hopeup img {
+    max-height: 60vh;
+  }
+}
+
+/* Tablets pequenos (até 768px) */
+@media screen and (max-width: 768px) {
+  .citacao-precedente {
+    padding: 2rem;
+  }
+
+  .representacao-hopeup img {
+    max-height: 65vh;
+  }
+}
+
+/* Tablets grandes / notebooks compactos (até 992px) */
+@media screen and (max-width: 992px) {
+  .representacao-hopeup img {
+    max-height: 70vh;
+  }
+}
+
+/* Ultrawides (acima de 1920px) */
+@media screen and (min-width: 1921px) {
+  .citacao-precedente {
+    padding: 2.5rem; /* Mais espaço para telas largas */
+  }
+
+  .representacao-hopeup img {
+    max-height: 75vh; /* Imagem mais alta */
+  }
+
+  .representacao-hopeup figcaption {
+    font-size: 1.1rem; /* Legenda maior */
+  }
+}
+
+
+
+

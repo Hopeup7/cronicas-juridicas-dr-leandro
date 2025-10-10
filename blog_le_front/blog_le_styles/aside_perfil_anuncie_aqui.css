@@ -1,0 +1,145 @@
+/* ← Bloco “Anuncie Aqui” */
+/*Deus, Tu és Senhor e Rei e integrante da Equipe HopeUp 7.DEV, por isso se faça presente aqui nestes nossos estudos, por favor, Senhor.*/
+
+/* ===================== CONTAINER PRINCIPAL ===================== */
+.perfil-anuncie-aqui {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #444;
+  flex-grow: 1;
+}
+
+/* ===================== SEÇÃO INTERNA ===================== */
+.secao-anuncie-aqui {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin: 2rem auto;
+  box-sizing: border-box;
+}
+
+/* ===================== CONTAINER DE CONTEÚDO ===================== */
+.container-anuncie-aqui {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+/* ===================== TEXTO COM CLAMP ===================== */
+.container-anuncie-aqui p {
+  font-size: clamp(0.95rem, 1.2vw, 1.1rem); /* Tamanho fluido para leitura */
+  line-height: 1.6;                         /* Altura de linha confortável */
+  color: #444;
+}
+
+/* Smartphones pequenos (até 400px) */
+@media screen and (max-width: 400px) {
+  .perfil-anuncie-aqui {
+    padding: 1rem; /* Reduz o espaçamento interno do bloco */
+  }
+
+  .secao-anuncie-aqui {
+    padding: 1rem; /* Reduz o padding da seção interna */
+    margin: 1rem auto; /* Menos espaço vertical */
+  }
+
+  .container-anuncie-aqui {
+    gap: 0.75rem; /* Espaço menor entre elementos */
+  }
+}
+
+/* Smartphones médios (até 480px) */
+@media screen and (max-width: 480px) {
+  .perfil-anuncie-aqui {
+    padding: 1.2rem;
+  }
+
+  .secao-anuncie-aqui {
+    padding: 1.2rem;
+  }
+}
+
+/* Smartphones grandes / phablets (até 600px) */
+@media screen and (max-width: 600px) {
+  .perfil-anuncie-aqui {
+    padding: 1.3rem;
+  }
+
+  .secao-anuncie-aqui {
+    padding: 1.3rem;
+  }
+}
+
+/* Tablets pequenos (até 768px) */
+@media screen and (max-width: 768px) {
+  .perfil-anuncie-aqui {
+    padding: 1.5rem;
+  }
+
+  .secao-anuncie-aqui {
+    padding: 1.5rem;
+  }
+
+  .container-anuncie-aqui {
+    gap: 1rem;
+  }
+}
+
+/* Tablets grandes / notebooks compactos (até 992px) */
+@media screen and (max-width: 992px) {
+  .perfil-anuncie-aqui {
+    padding: 1.75rem;
+  }
+
+  .secao-anuncie-aqui {
+    padding: 1.75rem;
+  }
+}
+
+/* Notebooks médios (até 1200px) */
+@media screen and (max-width: 1200px) {
+  .perfil-anuncie-aqui {
+    padding: 2rem;
+  }
+
+  .secao-anuncie-aqui {
+    padding: 2rem;
+  }
+}
+
+/* Desktops grandes (até 1440px) */
+@media screen and (max-width: 1440px) {
+  .perfil-anuncie-aqui {
+    padding: 2rem;
+  }
+
+  .secao-anuncie-aqui {
+    padding: 2rem;
+  }
+}
+
+/* Ultrawides (acima de 1920px) */
+@media screen and (min-width: 1921px) {
+  .perfil-anuncie-aqui {
+    padding: 2.5rem; /* Mais espaço para telas ultra largas */
+  }
+
+  .secao-anuncie-aqui {
+    padding: 2.5rem;
+  }
+
+  .container-anuncie-aqui {
+    gap: 1.25rem; /* Espaço extra entre os elementos */
+  }
+}

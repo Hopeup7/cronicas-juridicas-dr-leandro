@@ -1,0 +1,115 @@
+/* ← Parte 1 do <main> (título e aviso) */
+
+/*Deus, Tu és Senhor e Rei e integrante da Equipe HopeUp 7.DEV, por isso se faça presente aqui nestes nossos estudos, por favor, Senhor.*/
+
+/* ===================== CONTAINER DO TÍTULO ===================== */
+.titulo-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 1rem;
+  background-color: #eaeaea;
+  text-align: center;
+  gap: 1rem;
+}
+/* ===================== TÍTULOS COM CLAMP ===================== */
+.titulo-flex h1 {
+  font-size: clamp(1.4rem, 3vw, 1.8rem); /* Título principal fluido */
+  color: #222;
+  margin: 0 0 1.3rem 0;
+  line-height: 1.3;
+}
+
+
+
+.titulo-flex h2 {
+  font-size: 1.6rem;
+  font-family: 'Playfair Display', serif;
+  color: #2c2c2c;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+
+.titulo-flex h2 {
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem); /* Subtítulo fluido */
+  font-family: 'Playfair Display', serif;
+  color: #2c2c2c;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+
+
+#aviso-narrativa {
+  background-color: #fff3cd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+/* ===================== AVISO COM CLAMP ===================== */
+#aviso-narrativa h5 {
+  font-size: clamp(0.9rem, 1.2vw, 1rem); /* Texto do aviso fluido */
+  font-style: italic;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+  margin: 0;
+}
+
+/* Smartphones pequenos (até 400px) */
+@media screen and (max-width: 400px) {
+  .titulo-flex {
+    padding: 2rem 0.8rem; /* Reduz espaçamento lateral */
+    gap: 0.8rem; /* Espaço menor entre elementos */
+  }
+
+  #aviso-narrativa {
+    padding: 0.8rem;
+  }
+}
+
+/* Smartphones médios (até 480px) */
+@media screen and (max-width: 480px) {
+  .titulo-flex {
+    padding: 2rem 1rem;
+  }
+
+  #aviso-narrativa {
+    padding: 1rem;
+  }
+}
+
+/* Tablets pequenos (até 768px) */
+@media screen and (max-width: 768px) {
+  .titulo-flex {
+    padding: 2.5rem 1.2rem;
+  }
+
+  #aviso-narrativa {
+    margin-top: 1.2rem;
+  }
+}
+
+/* Ultrawides (acima de 1920px) */
+@media screen and (min-width: 1921px) {
+  .titulo-flex {
+    padding: 3rem 2rem; /* Mais espaço para telas largas */
+    gap: 1.2rem;
+  }
+
+  #aviso-narrativa {
+    padding: 1.2rem;
+    margin-top: 1.5rem;
+  }
+
+  #aviso-narrativa h5 {
+    font-size: 1.1rem; /* Texto maior para monitores largos */
+  }
+}
+
+

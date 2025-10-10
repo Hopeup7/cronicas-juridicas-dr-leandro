@@ -1,0 +1,134 @@
+/* Container principal do bloco de anúncio */
+.perfil-anuncie-aqui-esquerda-2 {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;   /* organiza o conteúdo em coluna */
+  align-items: center;
+  font-size: 0.95rem;
+  color: #444;
+  flex: 1 1 auto;           /* permite crescer/encolher dentro da coluna */
+  max-width: 100%;          /* garante que não estoure */
+}
+
+/* Seção interna */
+.secao-anuncie-aqui-esquerda-2 {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin: 0 auto;           /* centraliza dentro do aside */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Container de conteúdo */
+.container-anuncie-aqui-esquerda-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ===================== TEXTO COM CLAMP ===================== */
+.container-anuncie-aqui-esquerda-2 p {
+  font-size: clamp(1rem, 1.2vw, 1.15rem); /* Tamanho fluido para leitura */
+  line-height: 1.6;                       /* Altura de linha confortável */
+  color: #444;
+  margin: 0;
+}
+
+
+/* Imagem */
+.logo-suave-anuncie-esquerda-2 {
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* Smartphones pequenos (até 400px) */
+@media screen and (max-width: 400px) {
+  .perfil-anuncie-aqui-esquerda-2 {
+    padding: 1rem; /* Reduz o espaçamento interno */
+  }
+
+  .secao-anuncie-aqui-esquerda-2 {
+    padding: 1rem; /* Reduz o padding da seção */
+  }
+
+  .logo-suave-anuncie-esquerda-2 {
+    max-width: 180px; /* Imagem menor para telas estreitas */
+  }
+
+  .container-anuncie-aqui-esquerda-2 {
+    gap: 0.75rem; /* Espaço menor entre os elementos */
+  }
+}
+
+/* Smartphones médios (até 480px) */
+@media screen and (max-width: 480px) {
+  .logo-suave-anuncie-esquerda-2 {
+    max-width: 200px; /* Imagem um pouco maior */
+  }
+}
+
+/* Smartphones grandes / phablets (até 600px) */
+@media screen and (max-width: 600px) {
+  .logo-suave-anuncie-esquerda-2 {
+    max-width: 220px; /* Imagem padrão para celulares maiores */
+  }
+}
+
+/* Tablets pequenos (até 768px) */
+@media screen and (max-width: 768px) {
+  .perfil-anuncie-aqui-esquerda-2 {
+    padding: 1.5rem;
+  }
+
+  .secao-anuncie-aqui-esquerda-2 {
+    padding: 1.5rem;
+  }
+
+  .container-anuncie-aqui-esquerda-2 {
+    gap: 1rem;
+  }
+}
+
+/* Tablets grandes / notebooks compactos (até 992px) */
+@media screen and (max-width: 992px) {
+  .logo-suave-anuncie-esquerda-2 {
+    max-width: 240px; /* Imagem maior para notebooks pequenos */
+  }
+}
+
+/* Notebooks médios (até 1200px) */
+@media screen and (max-width: 1200px) {
+  .logo-suave-anuncie-esquerda-2 {
+    max-width: 260px; /* Imagem maior para notebooks padrão */
+  }
+}
+
+/* Desktops grandes (até 1440px) */
+@media screen and (max-width: 1440px) {
+  .logo-suave-anuncie-esquerda-2 {
+    max-width: 280px; /* Imagem maior para monitores full HD */
+  }
+}
+
+/* Ultrawides (acima de 1920px) */
+@media screen and (min-width: 1921px) {
+  .logo-suave-anuncie-esquerda-2 {
+    max-width: 320px; /* Imagem maior para telas ultra largas */
+  }
+
+  .container-anuncie-aqui-esquerda-2 {
+    gap: 1.25rem; /* Espaço extra entre os elementos */
+  }
+}

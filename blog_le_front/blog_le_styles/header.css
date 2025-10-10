@@ -1,0 +1,77 @@
+/*← Estilos do banner e topo do site*/
+/*Cabeçalho do site (banner, logo, topo)*/
+
+/*Deus, Tu és Senhor e Rei e integrante da Equipe HopeUp 7.DEV, por isso se faça presente aqui nestes nossos estudos, por favor, Senhor.*/
+
+/* ===================== BANNER (mantido) ===================== */
+/* ===================== BANNER PADRÃO ===================== */
+#banner {
+  height: 550px; /* Altura padrão para desktops */
+  background-image: url("/blog_le_front/imagens_front_blog_le/so_logo_blog_le.png");
+  background-position: center; /* Centraliza a imagem */
+  background-size: 100% 100%;  /* Preenche todo o espaço */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+}
+/* Smartphones pequenos (até 400px) */
+@media screen and (max-width: 400px) {
+  #banner {
+    height: 280px; /* Banner mais compacto para telas estreitas */
+    background-size: cover; /* Mantém proporção da imagem */
+  }
+}
+
+/* Smartphones médios (até 480px) */
+@media screen and (max-width: 480px) {
+  #banner {
+    height: 320px;
+    background-size: cover;
+  }
+}
+
+/* Smartphones grandes / phablets (até 600px) */
+@media screen and (max-width: 600px) {
+  #banner {
+    height: 360px;
+    background-size: cover;
+  }
+}
+
+/* Tablets pequenos (até 768px) */
+@media screen and (max-width: 768px) {
+  #banner {
+    height: 420px;
+    background-size: cover;
+  }
+}
+
+/* Tablets grandes / notebooks compactos (até 992px) */
+@media screen and (max-width: 992px) {
+  #banner {
+    height: 480px;
+    background-size: cover;
+  }
+}
+
+/* Notebooks médios (até 1200px) */
+@media screen and (max-width: 1200px) {
+  #banner {
+    height: 520px;
+    background-size: cover;
+  }
+}
+
+/* Desktops grandes (até 1440px) */
+@media screen and (max-width: 1440px) {
+  #banner {
+    height: 550px;
+    background-size: 100% 100%;
+  }
+}
+
+/* Ultrawides (acima de 1920px) */
+@media screen and (min-width: 1921px) {
+  #banner {
+    height: 600px; /* Banner mais alto para telas largas */
+    background-size: 100% 100%;
+  }
+}
